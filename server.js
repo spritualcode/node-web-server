@@ -17,7 +17,10 @@ hbs.registerHelper('getCurrentYear',()=>{
 
 app.get('/',(req,res)=>{
     //res.send('<h1>I am express</h1>');
-    res.send({"name":"Aadvik", "Age":"5.6"});
+    //res.send({"name":"Aadvik", "Age":"5.6"});
+    res.render('home.hbs',{
+        welcomeTItle:"welcome to home"
+        });
 });
 
 app.get('/home',(req,res)=>{
